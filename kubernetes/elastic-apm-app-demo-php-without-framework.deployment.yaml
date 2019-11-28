@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: elastic-apm-app-demo-php-without-framework-deployment
+  labels:
+    app: elastic-apm-app-demo-php-without-framework
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: elastic-apm-app-demo-php-without-framework
+  template:
+    metadata:
+      labels:
+        app: elastic-apm-app-demo-php-without-framework
+    spec:
+      containers:
+        - name: elastic-apm-app-demo-php-without-framework
+          image: elastic-apm-app-demo-php-without-framework:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+              name: webinterface

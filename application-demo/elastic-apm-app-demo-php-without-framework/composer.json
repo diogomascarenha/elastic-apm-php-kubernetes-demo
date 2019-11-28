@@ -1,0 +1,12 @@
+{
+    "name": "diogomascarenha/elastic-apm-app-demo-php-without-framework",
+    "authors": [
+        {
+            "name": "Diogo Oliveira Mascarenhas",
+            "email": "diogomascarenha@gmail.com"
+        }
+    ],
+    "require": {
+        "philkra/elastic-apm-php-agent": "^6.5"
+    }
+}
