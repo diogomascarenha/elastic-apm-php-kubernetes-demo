@@ -31,3 +31,5 @@ spec:
         - name: data
           persistentVolumeClaim:
             claimName: elasticsearch
+      securityContext:
+        fsGroup: 1000
